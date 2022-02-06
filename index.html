@@ -1,30 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Supermercado+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Supermercado+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Poppins:wght@300&family=Supermercado+One&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header>
-        <div class="banner">
-            <div class="navbar">
-        <nav>
-            <img src="witlogo.jpg" alt="logo" class="logo">
+    <title> Women In Technology-Home Page</title>
+  </head>
+  <body>
+    <section class="header">
+      <div class="banner">
+        <div class="navbar">
+          <nav>
+            <img src="witlogo.jpg" alt="logo" class="logo" />
+            <i class="fa fa-times" onclick="hideMenu()"></i>
             <ul>
-                <li><a href="home.html" target="_blank"> Home </a></li>
-                <li><a href="achievements.html"  target="_blank"> Achievements</a></li>
-                <li><a href="lifehistory.html"  target="_blank"> Life History and Work in Technical Field</a></li>
-                <li><a href="form.html"  target="_blank"> Form</a></li>
-                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                    <i class="fa fa-bars"></i>
-                  </a>
+              <li><a href="index.html" > Home </a></li>
+              <li><a href="women_in_tech.html" target="_blank">Women In Tech</a></li>
+              <li>
+                <a href="achievements.html" target="_blank"> Achievements</a>
+              </li>
+              <li>
+                <a href="lifehistory.html" target="_blank">
+                  Life History and Work in Technical Field</a
+                >
+              </li>
+              <li><a href="form.html" target="_blank"> Form</a></li>
+              <i class="fa fa-bars" onclick="showMenu()"></i>
+              </a>
             </ul>
-        </nav>
+          </nav>
         </div>
-    </div>
-    <h1>Women In Technology</h1>
-    </header>
-</body>
+      </div>
+      <div class="text-box">
+        <h1>Women In Technology</h1>
+        <p>"Women should never be afraid to put themselves forward."</p>
+      </div>
+    </section>
+  </body>
 </html>
