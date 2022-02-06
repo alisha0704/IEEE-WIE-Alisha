@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Supermercado+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Supermercado+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Poppins:wght@300&family=Supermercado+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css"/>
+   
+</head>
+<body>
+    <section class="sub-header">
+        <div class="banner">
+          <div class="navbar">
+            <nav>
+              <img src="witlogo.jpg" alt="logo" class="logo" />
+              <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+            <li><a href="index.html" > Home </a></li>
+              <li><a href="women_in_tech.html" target="_blank">Women In Tech</a></li>
+              <li>
+                <a href="achievements.html" target="_blank"> Achievements</a>
+              </li>
+              <li>
+                <a href="lifehistory.html" target="_blank">
+                  Life History and Work in Technical Field</a
+                >
+              </li>
+              <li><a href="form.html" target="_blank"> Form</a></li>
+              <i class="fa fa-bars" onclick="showMenu()"></i>
+              </a>
+            </ul>
+        </nav>
+        </div>
+        </div>
+        </section>
+        <div class="container">
+            <form action="action_page.php">
+              <div class="row1">
+                <div class="col-25">
+                  <label for="fname">First Name</label>
+                </div>
+                <div class="col-75">
+                  <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                </div>
+              </div>
+              <div class="row1">
+                <div class="col-25">
+                  <label for="lname">Last Name</label>
+                </div>
+                <div class="col-75">
+                  <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                </div>
+              </div>
+              <div class="row1">
+                <div class="col-25">
+                  <label for="country">State</label>
+                </div>
+                <div class="col-75">
+                  <select id="country" name="state">
+                    <option value="selectastate">Select a State</option>
+                    <option value="westbengal">West Bengal</option>
+                    <option value="andhrapradesh">Andhra Pradesh</option>
+                    <option value="uttarpradesh">Uttar Pradesh</option>
+                    <option value="karnataka">West Karnataka</option>
+                    <option value="gujarat">Gujarat</option>
+                    <option value="rajasthan">Rajasthan</option>
+                    <option value="madhyapradesh">Madhya Pradesh</option>
+                  </select>
+                </div>
+              </div>
+              <div class="row1">
+                <div class="col-25">
+                  <label for="email">Email ID</label>
+                </div>
+                <div class="col-75">
+                  <input type="text" id="email" name="emailid" placeholder="Your Email ID...">
+                </div>
+              </div>
+              <div class="row1">
+                <div class="col-25">
+                  <label for="subject">Description</label>
+                </div>
+                <div class="col-75">
+                  <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+                </div>
+              </div>
+              <div class="row1">
+                <input type="submit" value="Submit">
+              </div>
+            </form>
+          </div>
+    </body>
+</html>
+  
