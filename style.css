@@ -9,21 +9,21 @@
     justify-content: space-between;
     align-items: center;
   }
-.navbar{
+  .navbar{
     width:100%;
     margin:0px 20px;
     padding:35px 0;
     display:flex;
     align-items: center;
     justify-content: space-between;
-}
-.banner{
+  }
+  .banner{
     width: 100%;
     height: 20vh;
     background-size: cover;
     background-position: center;
-}
-.header {
+  }
+  .header {
     min-height: 100vh;
     width: 100%;
     background-image: linear-gradient(rgba(4,9,30,0.002),rgba(4,9,30,0.002)),url(tech.jpg);
@@ -31,43 +31,41 @@
     background-size: cover;
     position: relative;
   }
-.sub-header{
+  .sub-header{
   min-height: 30vh;
   width: 100%;
   background-image: linear-gradient(rgba(4,9,30,0.002),rgba(4,9,30,0.002)),url(tech.jpg);
   background-position: center;
   background-size: cover;
   position: relative;
-
-}
-.logo{
+  }
+  .logo{
     width:100px;
     cursor: pointer;
-}
-.navbar ul{
+  }
+  .navbar ul{
     margin:0;
     padding:0;
     list-style:none;
     float: right;
     right:15px;
-
-}
-.navbar ul li{
+  }
+  .navbar ul li{
     list-style: none;
     display: inline-block;
     padding-top:50px;
     margin-left:70px;
     position: relative;
-}
-.navbar ul li a{
+  }
+  .navbar ul li a{
     text-decoration: none;
     color: white;
     text-transform: uppercase;
     font-weight:bold;
     width: max-content;
     font-size:18px;
-}
-.navbar ul li::after{
+  }
+  .navbar ul li::after{
     content: '';
     height: 3px;
     width: 0;
@@ -76,13 +74,13 @@
     left: 0;
     bottom: -10px;
     transition: 0.5s;
-
-}
-.navbar ul li:hover::after{
+  
+  }
+  .navbar ul li:hover::after{
     width: 100%;
     color:aquamarine;
-}
-.text-box {
+  }
+  .text-box {
   width: 90%;
   color: #fff;
   position: absolute;
@@ -90,65 +88,62 @@
   left: 50%;
   transform: translate(-50%, -50%); 
   text-align: center;
-}
-.text-box h1 {
+  }
+  .text-box h1 {
   font-size: 65px;
-}
-.text-box p {
-  margin: 10px 0 40px; /*top left-right bottom*/
-  font-size: 25px;
+  }
+  .text-box p {
+  margin: 10px 0 40px; 
+  font-size: 20px;
   color: rgb(247, 239, 239);
-}
-.heading {
+  }
+  .heading {
   padding: 20px;
   text-align: center;
   background: white;
-}
-.leftcolumn {
+  }
+  .leftcolumn {
   float: none;
   width: 100%;
   text-align: center;
   padding:0%
-}
-.image_s {
+  }
+  .image_s {
   width: 100%;
   padding: 30px;
-}
-.card {
+  }
+  .card {
   background-color: white;
   padding: 20px;
   margin-top: 20px;
-}
-.card p{
+  }
+  .card p{
   font-size: 15px;
-}
-.row:after {
+  }
+  .row:after {
   content: "";
   display: table;
   clear: both;
-}
-@media screen and (max-width: 800px) {
+  }
+  @media screen and (max-width: 800px) {
   .leftcolumn, .rightcolumn {
     width: 100%;
     padding: 0;
   }
-}
-.card p{
-  font-size: 15px;
-}
-input[type=text], select, textarea{
+  }
+  input[type=text], select, textarea{
   width: 100%;
   padding: 12px;
   border: 1px solid #ccc;
   border-radius: 4px;
   box-sizing: border-box;
   resize: vertical;
-}
-label {
+  }
+  label {
   padding: 12px 12px 12px 0;
   display: inline-block;
-}
-input[type=submit] {
+  }
+  input[type=submit] {
   background-color: #04AA6D;
   color: white;
   padding: 12px 20px;
@@ -156,33 +151,162 @@ input[type=submit] {
   border-radius: 4px;
   cursor: pointer;
   float: right;
-}
-.container {
+  }
+  .container {
   border-radius: 5px;
   background-color: #f2f2f2;
   padding: 20px;
-}
-.col-25 {
+  }
+  .col-25 {
   float: left;
   width: 25%;
   margin-top: 6px;
-}
-.col-75 {
+  }
+  .col-75 {
   float: left;
   width: 75%;
   margin-top: 6px;
-}
-.row1:after {
+  }
+  .row1:after {
   content: "";
   display: table;
   clear: both;
-} 
-@media screen and (max-width: 600px) {
+  } 
+  @media screen and (max-width: 600px) {
   .col-25, .col-75, input[type=submit] {
     width: 100%;
     margin-top: 0;
   }
-}
-.content{
+  }
+  .content{
   background-color: rgb(236, 184, 163,0.5);
-}
+  }
+  button{
+    width:200px;
+    padding:15px 0;
+    text-align:center;
+    margin: 20px 10px;
+    border-radius:25px;
+    font-weight:bold;
+    border:2px solid black;
+    background: rgb(7, 182, 124);
+    color: black;
+    cursor:pointer;
+    position: relative;
+    overflow:hidden;
+  }
+  span{
+    background: salmon;
+    height:100%;
+    width:0;
+    border-radius: 25px;
+    position:absolute;
+    left:0;
+    bottom:0;
+    z-index:-1;
+    transition:0.5s;
+  }
+  button:hover span{
+    width:100%;
+  }
+  button:hover{
+    border:none;
+  }
+  .footer {
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+  }
+  
+  .footer h4 {
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+  }
+  .fa {
+    padding: 20px;
+    font-size: 20px;
+    width: 18px;
+    text-align: center;
+    text-decoration: none;
+    border-radius:50%;
+  }
+  .fa:hover {
+    opacity: 0.7;
+  }
+  .fa-instagram {
+    background: #c50c43;
+    color: white;
+  }
+  .fa-linkedin{
+    background: #3B5998;
+    color: white;
+  }
+  .fa-reddit {
+    background: orangered;
+    color: white;
+  }
+  
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+  .women{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+  }
+  .women-col {
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+  }
+  .row2{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .women-col img {
+    width: 100%;
+    display: block;
+  }
+  .layer {
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+  }
+  
+  .layer:hover {
+    background: rgba(226, 0, 0, 0.6);
+  }
+  
+  .layer h3 {
+    width: 100%;
+    font-weight: 500;
+    color: #fff;
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0%;
+    transition: 0.5s;
+  }
+  
+  .layer:hover h3 {
+    opacity: 1;
+    bottom: 49%;
+  }
+  
